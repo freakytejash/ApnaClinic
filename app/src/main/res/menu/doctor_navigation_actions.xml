@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/action_my_profile"
+                android:enabled="true"
+                android:icon="@drawable/ic_watchlist_white"
+                android:title="@string/my_profile"
+                app:showAsAction="always"/>
+
+        <item
+                android:id="@+id/action_my_accounts"
+                android:enabled="true"
+                android:icon="@drawable/ic_watchlist_white"
+                android:title="@string/my_accounts"
+                app:showAsAction="always"/>
+
+        <item
+                android:id="@+id/action_terms"
+                android:enabled="true"
+                android:icon="@drawable/ic_watchlist_white"
+                android:title="@string/terms_n_condition"
+                app:showAsAction="always"/>
+
+        <item
+                android:id="@+id/action_feedback"
+                android:enabled="true"
+                android:icon="@drawable/ic_watchlist_white"
+                android:title="@string/feedback"
+                app:showAsAction="always"/>
+
+        <item
+                android:id="@+id/action_change_password"
+                android:enabled="true"
+                android:icon="@drawable/ic_watchlist_white"
+                android:title="@string/change_password"
+                app:showAsAction="always"/>
+
+        <item
+                android:id="@+id/action_logout"
+                android:enabled="true"
+                android:icon="@drawable/ic_watchlist_white"
+                android:title="@string/logout"
+                app:showAsAction="always"/>
+    </group>
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--<color name="colorPrimary">#7b61b9</color>-->
+    <!--<color name="colorPrimaryDark">#fff</color>-->
+    <!--<color name="colorAccent">#ff5d33bf</color>-->
+
+    <color name="gradient_color">#8945D8</color>
+    <color name="colorLytBgGreen">#ff14d2b8</color>
+    <color name="colorLytBgNormal">#D3D3D3</color>
+    <color name="colorLytBgClicked">#ffa3a3a3</color>
+    <color name="bottom_navigation">#F5F5F5</color>
+
+    <color name="white">#fff</color>
+
+    <color name="your_unselected_text_color">#000000</color>
+    <color name="your_selected_text_color">#000000</color>
+    <color name="logo_green">#6EC7AB</color>
+    <color name="black">#000000</color>
+
+
+
+    <color name="textColor">#A8000000</color>
+    <color name="subTextColor">#ff5f5f5f</color>
+    <color name="secondSubTextColor">#45000000</color>
+    <color name="blue_drawer">#ff5d33bf</color>
+
+    <color name="red">#ed1b48</color>
+    <color name="green">#6ec7ab</color>
+    <color name="maroon">#8c3143</color>
+    <color name="gray">#5e5e5f</color>
+    <color name="light_yello">#236434</color>
+    <color name="filterBlack">#3C3A4A</color>
+
+    <color name="filterButtonSelected">#7B61B9</color>
+</resources>

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:weightSum="2"
+        style="@style/horizontal_linear_layout">
+
+        <Button
+            android:id="@+id/openCase"
+            android:textAllCaps="false"
+            android:background="@color/logo_green"
+            android:textColor="@android:color/white"
+            android:text="Open Cases"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/closedCase"
+            android:textAllCaps="false"
+            android:background="@color/gray"
+            android:textColor="@android:color/black"
+            android:text="Closed Cases"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+
+</LinearLayout>

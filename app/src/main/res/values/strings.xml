@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Apna Clinic</string>
+
+    <string name="font_black">black</string>
+    <string name="font_heavy">heavy</string>
+    <string name="font_roman">roman</string>
+
+    <string name="emailOrPhone">Email / Phone</string>
+
+    <string name="enter_email">Enter your email-id</string>
+    <string name="enter_phone">Enter your phone number</string>
+    <string name="enter_dob">Enter DOB</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="show">Show</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="edit">Edit</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of birth</string>
+    <string name="address">Address</string>
+    <string name="update">Update</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="hide">Hide</string>
+    <string name="message">Want to register as Doctor?</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_medical_history">Medical History</string>
+    <string name="nav_medical_reports">Medical Reports</string>
+    <string name="nav_user_profile">User Profile</string>
+    <string name="nav_change_password">Change Password</string>
+    <string name="nav_logout">Logout</string>
+
+
+<!--Drawer values-->
+    <string name="medical_history">Medical History</string>
+    <string name="medical_reports">Medical Reports</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="user_profile">User Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_accounts">My Accounts</string>
+    <string name="terms_n_condition">Terms &amp; Conditions</string>
+    <string name="feedback">Feedback</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="login">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_user">New User?</string>
+    <string name="already_have_account">Already have account? Sign In</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="welcome">Welcome</string>
+
+    <string name="retry">Retry</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="friends">Friends</string>
+    <string name="rate">Rate</string>
+    <!--Tabs-->
+    <string name="dashboard">Dashboard</string>
+    <string name="recent">Recent</string>
+    <string name="consult">Consult</string>
+    <string name="cases">Cases</string>
+
+    <string name="action_pay_now">Pay Now</string>
+
+    <string name="text_consultation_cardview">TEXT CONSULTATION</string>
+    <string name="pending_consultation_cardview">PAID AMOUNT</string>
+    <string name="audio_consultation_cardview">AUDIO CONSULTATION</string>
+    <string name="video_consultation_cardview">VIDEO CONSULTATION</string>
+    <string name="action_consult_now_title">Consult Now</string>
+    <string name="action_consult_now_subtitle">Connect instantly with a doctor</string>
+
+    <string name="exit_message">Please click BACK again to exit</string>
+
+    <string name="title_consult_fragment">Select Doctor Speciality</string>
+    <string name="proceed">Proceed</string>
+    <string name="status">Status</string>
+
+    <!-- Medical history -->
+    <string name="disease_history">Are you having any diseases history?</string>
+    <string name="surgery_history">Any surgery/procedure performed recently?</string>
+    <string name="medical_allergy">Do you have any medical allergy?</string>
+    <string name="habit_history">Do you have any habits?</string>
+    <string name="save">Save</string>
+
+    <!--Doctor Appointment-->
+    <string name="new_appointments">New Appointments</string>
+    <string name="past_appointments">Past Appointments</string>
+
+
+
+    <string name="selected_time">The time you picked will be shown here.</string>
+    <string name="selected_date">The date you picked will be shown here.</string>
+    <string name="selected_datetime">The date and time you picked will be shown here.</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="original_button">Framework Picker</string>
+    <string name="pick_datetime">Pick Date+Time</string>
+    <string name="mode_24_hours">Use 24 hour mode</string>
+    <string name="mode_dark">Use dark theme</string>
+    <string name="mode_custom_accent">Use custom accent</string>
+    <string name="vibrate">Vibrate on touch</string>
+    <string name="dismiss">Dismiss on pause (eg: orientation change)</string>
+    <string name="title">Show a title</string>
+    <string name="show_version_2">Use marshmallow layout</string>
+    <string name="show_year_first">Show the year picker first</string>
+    <string name="enable_seconds">Show seconds picker</string>
+    <string name="enable_minutes">Show minutes picker</string>
+    <string name="limit_times">Limit selectable times</string>
+    <string name="limit_dates">Limit selectable dates</string>
+    <string name="disable_dates">Disable specific dates</string>
+    <string name="disable_times">Disable specific times</string>
+    <string name="highlight_dates">Highlight certain dates</string>
+    <string name="switch_orientation">Switch scroll orientation</string>
+
+
+    <string name="report">Report</string>
+    <string name="lab_name">Lab Name</string>
+    <string name="report_name">Report Name</string>
+    <string name="report_date">Report Date</string>
+    <string name="no_report_message">No report added</string>
+    <string name="mobile_otp">Mobile OTP</string>
+    <string name="email_otp">Email OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="valid_otp_error_message">Enter valid OTP for Mobile and Email</string>
+    <string name="year_of_experience">Year of experience</string>
+    <string name="specility">Specility</string>
+    <string name="language">Language</string>
+    <string name="medical_board">Medical board</string>
+    <string name="registration_no">Registration No.</string>
+    <string name="postgraduate">Postgraduate</string>
+    <string name="graduate">Graduate</string>
+</resources>

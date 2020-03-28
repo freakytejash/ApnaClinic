@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                style="@style/horizontal_line"/>
+
+        <LinearLayout
+                style="@style/vertical_linear_layout">
+
+            <LinearLayout
+                    android:weightSum="2"
+                    style="@style/horizontal_linear_layout">
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/text_card_view"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardCornerRadius="@dimen/dashboard_card_corner_radius"
+                        card_view:cardElevation="@dimen/dashboard_card_elevation"
+                        card_view:cardUseCompatPadding="true"
+                        style="@style/dashboard_cardview">
+
+                    <LinearLayout
+                            android:padding="@dimen/padding_20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            style="@style/vertical_linear_layout">
+
+                        <TextView
+                                android:id="@+id/text_textViewName"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:text="@string/text_consultation_cardview"
+                                style="@style/dashboard_cardview_title"/>
+
+                        <LinearLayout
+                                style="@style/horizontal_linear_layout"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                    android:id="@+id/text_textViewCount"
+                                    style="@style/dashboard_cardview_count"
+                                    android:text="2"/>
+
+                            <ImageView
+                                    android:id="@+id/text_imageView"
+                                    style="@style/dashboard_cardview_image"
+                                    android:src="@drawable/ic_launcher_foreground"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                        android:id="@+id/pending_card_view"
+                        style="@style/dashboard_cardview"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardCornerRadius="@dimen/dashboard_card_corner_radius"
+                        card_view:cardElevation="@dimen/dashboard_card_elevation"
+                        card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                            android:padding="@dimen/padding_20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            style="@style/vertical_linear_layout">
+
+                        <TextView
+                                android:id="@+id/pending_textViewName"
+                                style="@style/dashboard_cardview_title"
+                                android:text="@string/pending_consultation_cardview"/>
+
+                        <LinearLayout
+                                style="@style/horizontal_linear_layout"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                    android:id="@+id/pending_textViewCount"
+                                    style="@style/dashboard_cardview_count"
+                                    android:text="4"/>
+
+                            <ImageView
+                                    android:id="@+id/pending_imageView"
+                                    style="@style/dashboard_cardview_image"
+                                    card_view:srcCompat="@drawable/ic_launcher_foreground"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:weightSum="2"
+                    style="@style/horizontal_linear_layout">
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/audio_card_view"
+                        style="@style/dashboard_cardview"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardCornerRadius="@dimen/dashboard_card_corner_radius"
+                        card_view:cardElevation="@dimen/dashboard_card_elevation"
+                        card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                            android:padding="@dimen/padding_20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            style="@style/vertical_linear_layout">
+
+                        <TextView
+                                android:id="@+id/audio_textViewName"
+                                style="@style/dashboard_cardview_title"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:text="@string/audio_consultation_cardview"/>
+
+                        <LinearLayout
+                                style="@style/horizontal_linear_layout"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                    android:id="@+id/audio_textViewCount"
+                                    style="@style/dashboard_cardview_count"
+                                    android:text="2"/>
+
+                            <ImageView
+                                    android:id="@+id/audio_imageView"
+                                    style="@style/dashboard_cardview_image"
+                                    android:src="@drawable/ic_launcher_foreground"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                        android:id="@+id/video_card_view"
+                        style="@style/dashboard_cardview"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardCornerRadius="@dimen/dashboard_card_corner_radius"
+                        card_view:cardElevation="@dimen/dashboard_card_elevation"
+                        card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                            android:padding="@dimen/padding_20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            style="@style/vertical_linear_layout">
+
+                        <TextView
+                                android:id="@+id/textViewName"
+                                style="@style/dashboard_cardview_title"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:text="@string/video_consultation_cardview"/>
+
+                        <LinearLayout
+                                style="@style/horizontal_linear_layout"
+                                android:layout_marginTop="@dimen/margin_10dp">
+
+                            <TextView
+                                    android:id="@+id/textViewCount"
+                                    style="@style/dashboard_cardview_count"
+                                    android:text="4"/>
+
+                            <ImageView
+                                    android:id="@+id/imageView"
+                                    style="@style/dashboard_cardview_image"
+                                    android:src="@drawable/ic_launcher_foreground"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                style="@style/horizontal_line"/>
+
+        <RelativeLayout
+                android:id="@+id/consult_now_relative_layout"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+            <ImageView
+                    android:id="@+id/cosult_now_image"
+                    card_view:srcCompat="@drawable/ic_launcher_background"
+                    android:layout_width="@dimen/dashboard_image_width"
+                    android:layout_height="@dimen/dashboard_image_height"/>
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/cosult_now_image"
+                    android:text="@string/action_consult_now_title"
+                    android:padding="@dimen/title_text_padding"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:layout_toEndOf="@+id/cosult_now_image"/>
+            <LinearLayout
+                    style="@style/horizontal_linear_layout"
+                    android:layout_below="@+id/title"
+                    android:layout_toRightOf="@+id/cosult_now_image"
+                    android:padding="@dimen/title_text_padding"
+                    android:layout_toEndOf="@+id/cosult_now_image">
+
+                <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_consult_now_subtitle"
+                        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"/>
+
+                <ImageView
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:foregroundGravity="center"
+                        card_view:srcCompat="@drawable/ic_navigate_next_black_24dp"
+                        android:layout_width="@dimen/imageview_24dp_height_width"
+                        android:layout_height="@dimen/imageview_24dp_height_width"
+                        android:layout_marginStart="@dimen/margin_10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginBottom="50dp"
+                style="@style/horizontal_line"/>
+
+    </LinearLayout>
+</ScrollView>

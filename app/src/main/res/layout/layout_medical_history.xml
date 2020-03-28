@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/toolbar"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="70dp">
+
+        <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <in.co.akgroups.apnaClinic.custom.CustomTextView
+                    android:id="@+id/tv_disease_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/disease_history"
+                    android:layout_marginTop="16dp"
+                    style="@style/textFilterStyle"
+                    app:type_face="@string/font_black"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_disease_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_disease_history"/>
+
+            <in.co.akgroups.apnaClinic.custom.CustomTextView
+                    android:id="@+id/tv_surgery_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/rv_disease_history"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/surgery_history"
+                    style="@style/textFilterStyle"
+                    app:type_face="@string/font_black"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_surgery_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_surgery_history"/>
+
+            <in.co.akgroups.apnaClinic.custom.CustomTextView
+                    android:id="@+id/tv_medical_allergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/rv_surgery_history"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/medical_allergy"
+                    style="@style/textFilterStyle"
+                    app:type_face="@string/font_black"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_medical_allergy"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20sp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_medical_allergy"/>
+
+
+            <in.co.akgroups.apnaClinic.custom.CustomTextView
+                    android:id="@+id/tv_habit_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/rv_medical_allergy"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="@string/habit_history"
+                    style="@style/textFilterStyle"
+                    app:type_face="@string/font_black"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_habit_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_habit_history"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <in.co.akgroups.apnaClinic.custom.CustomButton
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            app:type_face="@string/font_heavy"
+            android:theme="@style/PrimaryButton"
+            android:text="@string/save"/>
+</RelativeLayout>

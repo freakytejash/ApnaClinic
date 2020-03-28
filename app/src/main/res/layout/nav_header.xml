@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <in.co.akgroups.apnaClinic.custom.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_user"/>
+
+    <in.co.akgroups.apnaClinic.custom.CustomTextView
+            android:id="@+id/txt_user_name"
+            android:text="@string/welcome"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="16dp"
+            android:maxLines="2"
+            app:type_face="@string/font_heavy"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:textColor="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

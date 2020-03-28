@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:windowBackground">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/lyt_expanded_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone">
+        <ImageView
+                android:id="@+id/iv_expanded_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lyt_reports"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+                android:id="@+id/et_report_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/search_background"
+                android:hint="@string/report_name"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="20dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<in.co.akgroups.apnaClinic.custom.CustomTextView-->
+        <!--android:id="@+id/tv_edit_report_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--app:layout_constraintRight_toRightOf="@id/et_report_name"-->
+        <!--app:layout_constraintTop_toTopOf="@id/et_report_name"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/et_report_name"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/gray"-->
+        <!--app:type_face="@string/font_black"-->
+        <!--android:layout_marginRight="@dimen/margin_10dp"-->
+        <!--android:textAppearance="?android:textAppearanceSmall"-->
+        <!--android:text="@string/show"-->
+        <!--android:padding="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginEnd="@dimen/margin_10dp"/>-->
+
+        <EditText
+                android:id="@+id/et_lab_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/search_background"
+                android:hint="@string/lab_name"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="20dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_report_name" />
+
+        <!--<in.co.akgroups.apnaClinic.custom.CustomTextView-->
+        <!--android:id="@+id/tv_edit_lab_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--app:layout_constraintRight_toRightOf="@id/et_lab_name"-->
+        <!--app:layout_constraintTop_toTopOf="@id/et_lab_name"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/et_lab_name"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/gray"-->
+        <!--app:type_face="@string/font_black"-->
+        <!--android:layout_marginRight="@dimen/margin_10dp"-->
+        <!--android:textAppearance="?android:textAppearanceSmall"-->
+        <!--android:text="@string/show"-->
+        <!--android:padding="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginEnd="@dimen/margin_10dp"/>-->
+
+
+        <EditText
+                android:id="@+id/et_date_of_report"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/search_background"
+                android:focusable="false"
+                android:hint="@string/report_date"
+                android:imeOptions="actionNext"
+                android:inputType="none"
+                android:paddingLeft="20dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_lab_name" />
+
+        <in.co.akgroups.apnaClinic.custom.CustomTextView
+                android:id="@+id/tv_attachment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:text="Attachments"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_date_of_report" />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_attachment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/btn_submit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_attachment">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <in.co.akgroups.apnaClinic.custom.CustomButton
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btn_cancel"
+                app:type_face="@string/font_black" />
+
+        <in.co.akgroups.apnaClinic.custom.CustomButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@color/green"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/btn_submit"
+                app:layout_constraintLeft_toRightOf="@id/btn_submit"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_submit"
+                app:type_face="@string/font_black" />
+
+        <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

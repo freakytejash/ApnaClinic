@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_foreground_view"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <in.co.akgroups.apnaClinic.custom.CustomTextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:type_face="@string/font_black"
+                android:text="date"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <in.co.akgroups.apnaClinic.custom.CustomTextView
+                android:id="@+id/tv_report_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:type_face="@string/font_black"
+                android:text="report name"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_date"
+        />
+
+        <in.co.akgroups.apnaClinic.custom.CustomTextView
+                android:id="@+id/tv_lab_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:type_face="@string/font_black"
+                android:text="lab name"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_report_name"
+        />
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_delete"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_date"
+                android:layout_width="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="30dp"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="TODO"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_delete"/>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
